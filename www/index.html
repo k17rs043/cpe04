@@ -150,7 +150,9 @@
 
 
     // 変数宣言
-
+    var active = false;
+    var startTime = 0;
+    var period = 0;
 
     
     // ボタンの初期設定
@@ -171,9 +173,9 @@
    audio.play();
 
    img.src ="ksuisbg.gif";
-   img.onload =functio n(){ctx.drawImage(img,0,0,300,300);
+   img.onload =function(){ctx.drawImage(img,0,0,200,200);
    };
-    
+  }
     // ButtonAがクリックされた時の処理
     function btnAClick(e){
         
@@ -202,7 +204,7 @@
   </script>
 </head>
 <body>
-    <canvas id="mycanvas" width="200" height="200">Test</canvas>
+    <canvas id="mycanvas" width="300" height="300">Test</canvas>
 
     <div id="minuteStr">〇</div>
     <div id="secondStr">〇</div>
